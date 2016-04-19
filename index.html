@@ -1,0 +1,258 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion Tres</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/13.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="b">
+<h1><center>Volcan Popocatepetl</center></h1>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Volcan Popocatepetl</h1>
+<div>
+<p>Imagenes del volcan Popocatepetl </p>
+</div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/wowindex.html" style="width:960px;height:360px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+</div>
+</div>
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Ubicacion del Volcan Popocatepetl</h2>
+<p>muestra la ubicacion</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Dimensiones del volcan popocatepetl</h2>
+<p>muestra la dimension</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Recomendaciones en caso de caida de ceniza volcanica</h2>
+<p>Muestra las recomendaciones</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Dependencias que los monitorean</h2>
+<p>Muestra las dependencias</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Recomendaciones para la erupcion del volcan</h2>
+<p>Muestra las recomndaciones</p>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Informacion del volcan de colima</h2>
+<p>Muestra la informacion</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+  <img src="imagenes/persona_azul.png" width="46" height="46">
+  </div>
+  <div>
+  <h4>Aplicacion Tres</h4>
+  <h4>Juan Pablo Gonzalez Varela</h4>
+  </div>
+  </div>
+</div>
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Ubicacion del volcan popocatepetl</h1>
+ 
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <h2>El Popocatépetl (en náhuatl: Popocatépetl, ‘el cerro que humea’)es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala</h2>
+  <div>
+    <p><img src="imagenes/10.png" width="70%" height="50%"> </p>
+    <p><a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/">http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/</a></p>
+  </div>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>APLICACION TRES VOLCAN POPOCATEPETL, GVJP</h4>
+  </div>
+  </div>
+  </div>
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Dimensiones del Volcan Popocatepetl</h1>
+ </div>
+<div data-role="content" align="center">
+ <div>
+ <h2>El Popocatépetl es un estratovolcán, y los estudios paleo magnéticos que se han hecho de él indican que tiene una edad aproximada de 730 000 años. Su altura es de 5500 msnm, es de forma cónica, tiene un diámetro de 25 km en su base y la cima es el corte elíptico de un cono y tiene una orientación noreste-suroeste. La distancia entre las paredes de su cráter varía entre los 660 y los 840 m</h2></div>
+ <div>
+ <center><img src="imagenes/7.jpg" width="40%" height="40%"></center> </div>
+</div>
+ <div data-role="footer" data-theme="a">
+ <h4>APLICACION TRES VOLCAN POPOCATEPETL, GVJP</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Recomendaciones en caso de caida de ceniza volcanica</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>•	No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado
+<br>
+•	Mantén la calma.
+<br>
+•	Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.
+<br>
+•	No realices actividades al aire libre y si es posible no salgas.
+<br>
+•	Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.
+<br>
+•	Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura. </h2></div>
+<div>
+ <center><img src="imagenes/9.jpg" width="40%" height="40%"></center> </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>APLICACION TRES VOLCAN POPOCATEPETL, GVJP</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Dependencia que los monitorean</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>México, DF. 3 de noviembre de 2015 (Agencia Informativa Conacyt).- La Universidad Popular Autónoma del Estado de Puebla upaep se encuentra desarrollando el prototipo de un pico satélite Cansat para analizar y monitorear los aerosoles y ceniza emitidos por el emblemático volcán Popocatépetl, y la observación de gran parte del territorio poblano. 
+<br>
+ •	VIGILANCIA VISUAL: Involucra monitoreo continuo por medio de una cámara de televisión situada cerca del volcán que transmite al CENAPRED y reconocimientos visuales frecuentes desde tierra o desde el aire.
+<br>
+•	MONITOREO SISMICO: Consiste en una red de estaciones sismológicas situadas sobre y alrededor del volcán, enlazadas por radio telemetría, como el centro de recepción y procesamiento de la información en el CENAPRED. 
+<br>
+•	
+•	MONITOREO GEODESICO: Consiste en redes de estaciones monumentadas, puntos de observación, e inclinó metros para detectar y medir deformaciones del edificio volcánico.
+<br> 
+
+•	MONITOREO GEOQUIMICO: Análisis químico frecuente de la fumarola (por espectrometría de correlación (COSPEC) y por Li-Cor, para determinación de la concentración de Bióxido de Azufre y Bióxido de Carbono respectivamente en la pluma que emana del cráter.</h2>
+ <div>
+ <center><img src="imagenes/8.jpg" width="40%" height="40%"></center> </div>
+ 
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>APLICACION TRES VOLCAN POPOCATEPETL, GVJP</h4>
+ </div>
+ </div>
+ </div>
+
+  <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Recomendaciones para la erupcion del volcan</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>
+ •	Mantente alejado de volcanes activos.
+<br>
+ 
+•	Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.
+<br>
+•	Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.
+<br>
+•	Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.
+<br>
+•	Evita zonas de ríos y regiones bajas
+</h2>
+ <div>
+ <center><img src="imagenes/11.jpg" width="40%" height="40%"></center> </div>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>APLICACION TRES VOLCAN POPOCATEPETL, GVJP</h4>
+ </div>
+ </div>
+ </div>
+ 
+  <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Informacion del Volcan de colima</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>El volcán de colima es un estratovolcán ubicado en los límites de los estados de Colima y Jalisco, en México. El volcán de Colima o volcán de Fuego se eleva entre 3870 y 3940 msnm, y su altura se encuentra en un constante cambio gracias a la constante actividad que ha presentado durante los últimos años </h2></div>
+<div>
+ <center>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/13.jpg',1)"><img src="imagenes/11.jpg" width="300" height="203" id="Image8"></a>
+ </center> </div>
+ </div>
+
+
+
+
+ <div data-role="footer" data-theme="a">
+ <h4>APLICACION TRES VOLCAN POPOCATEPETL, GVJP</h4>
+ </div>
+ </div>
+ </div>
+ <br>
+ <br>
+
+
+
+
+
+</body>
+ </html>
